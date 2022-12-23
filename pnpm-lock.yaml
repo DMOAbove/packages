@@ -244,11 +244,11 @@ importers:
       mos-plugin-readme: ^1.0.4
       read-ini-file: 'file:'
       standard: ^16.0.4
-      strip-bom: ^4.0.0
+      strip-bom: ^5.0.0
       tape: ^5.3.2
     dependencies:
       ini: 3.0.1
-      strip-bom: 4.0.0
+      strip-bom: 5.0.0
     devDependencies:
       mos: 2.0.0-alpha.3
       mos-plugin-readme: 1.0.4
@@ -265,11 +265,11 @@ importers:
       mos: 2.0.0-alpha.3
       mos-plugin-readme: ^1.0.4
       standard: ^16.0.4
-      strip-bom: ^4.0.0
+      strip-bom: ^5.0.0
       tape: ^5.3.2
     dependencies:
       json5: 2.2.1
-      strip-bom: 4.0.0
+      strip-bom: 5.0.0
     devDependencies:
       mos: 2.0.0-alpha.3
       mos-plugin-readme: 1.0.4
@@ -281,11 +281,11 @@ importers:
       js-yaml: ^4.1.0
       read-yaml-file: 'file:'
       standard: ^16.0.4
-      strip-bom: ^4.0.0
+      strip-bom: ^5.0.0
       tape: ^5.3.2
     dependencies:
       js-yaml: 4.1.0
-      strip-bom: 4.0.0
+      strip-bom: 5.0.0
     devDependencies:
       read-yaml-file: file:read-yaml-file
       standard: 16.0.4
@@ -4282,15 +4282,9 @@ packages:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
     dev: true
 
-  /ini/2.0.0:
-    resolution: {integrity: sha512-7PnF4oN3CvZF23ADhA5wRaYEQpJ8qygSkbtTXWBeXWXmEVRXK+1ITciHWwHhsjv1TmW0MgacIv6hEi5pX5NQdA==}
-    engines: {node: '>=10'}
-    dev: true
-
   /ini/3.0.1:
     resolution: {integrity: sha512-it4HyVAUTKBc6m8e1iXWvXSTdndF7HbdN713+kvLrymxTaU4AUBWrJ4vEooP+V7fexnVD3LKcBshjGGPefSMUQ==}
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
-    dev: false
 
   /internal-slot/1.0.3:
     resolution: {integrity: sha512-O0DB1JC/sPyZl7cIo78n5dR7eUSwwpYPiXRhTzNxZVAMUuB8vlnRFyLxdrVToks6XPLVnFfbzaVd5WLjhgg+vA==}
@@ -8092,6 +8086,11 @@ packages:
   /strip-bom/4.0.0:
     resolution: {integrity: sha512-3xurFv5tEgii33Zi8Jtp55wEIILR9eh34FAW00PZf+JnSsTmV/ioewSgQl97JHvgjoRGwPShsWm+IdrxB35d0w==}
     engines: {node: '>=8'}
+    dev: true
+
+  /strip-bom/5.0.0:
+    resolution: {integrity: sha512-p+byADHF7SzEcVnLvc/r3uognM1hUhObuHXxJcgLCfD194XAkaLbjq3Wzb0N5G2tgIjH0dgT708Z51QxMeu60A==}
+    engines: {node: '>=12'}
 
   /strip-final-newline/2.0.0:
     resolution: {integrity: sha512-BrpvfNAE3dcvq7ll3xVumzjKjZQ5tI1sEUIKr3Uoks0XUl45St3FlatVqef9prk4jRDzhW6WZg+3bk93y6pLjA==}
@@ -8983,7 +8982,6 @@ packages:
     dependencies:
       imurmurhash: 0.1.4
       signal-exit: 3.0.7
-    dev: false
 
   /write-json-file/1.2.0:
     resolution: {integrity: sha1-LV3+lqvDyIkFfJOXGqQAXvtUgTQ=}
@@ -9207,11 +9205,11 @@ packages:
   file:read-ini-file:
     resolution: {directory: read-ini-file, type: directory}
     name: read-ini-file
-    version: 3.1.0
-    engines: {node: '>=10.13'}
+    version: 4.0.0-0
+    engines: {node: '>=14.6'}
     dependencies:
-      ini: 2.0.0
-      strip-bom: 4.0.0
+      ini: 3.0.1
+      strip-bom: 5.0.0
     dev: true
 
   file:read-yaml-file:
@@ -9221,7 +9219,7 @@ packages:
     engines: {node: '>=10.13'}
     dependencies:
       js-yaml: 4.1.0
-      strip-bom: 4.0.0
+      strip-bom: 5.0.0
     dev: true
 
   file:root-link-target:
@@ -9264,10 +9262,10 @@ packages:
   file:write-ini-file:
     resolution: {directory: write-ini-file, type: directory}
     name: write-ini-file
-    version: 3.1.0
-    engines: {node: '>=10.13'}
+    version: 4.0.0
+    engines: {node: '>=14.6'}
     dependencies:
-      ini: 2.0.0
+      ini: 3.0.1
       make-dir: 3.1.0
-      write-file-atomic: 3.0.3
+      write-file-atomic: 5.0.0
     dev: true
